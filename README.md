@@ -1,5 +1,5 @@
 
-![Logo](https://i.imgur.com/M8tSVvo.png)
+![Logo](https://i.imgur.com/ovPAJyU.png)
 
 
 ## Formulário de Agendamento
