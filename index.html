@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto - Exercício 1</title>
+</head>
+
+<body>
+
+    <h1>Agende Seu Atendimento
+        
+        <!-- Imagem -->
+        <img src="img/bar.png" width="180px" height="70px"
+            style="position: relative; top: -22px; margin-left: -300px; margin-right: -5px;">
+    </h1>
+
+    <!-- \\ Formulário // -->
+
+    <form method="post" action="teste.jsp">
+
+        <!-- action ="local para onde vai as informações": endereço que vai fazer a coleta de dados.-->
+
+        <!-- method: POST: Envia dados no corpo da solicitação, mais seguro e permite grandes volumes de dados. // GET: Descreve que os dados são anexados à URL e é adequado para pesquisas, tornando claro que os dados são visíveis. -->
+
+        Nome:
+        <input type="text" name="Digite seu nome"> <!-- <input>: entrada de dados -->
+
+        <!-- type="text": Campo de entrada de texto onde o usuário pode inserir seu nome. -->
+        <br>
+
+        Sexo:
+        <input type="radio" name="tamanho" value="M" checked> Masculino
+        <input type="radio" name="tamanho" value="F"> Feminino
+
+        <!-- type="radio": Cria um botão de opção (radio) que permite ao usuário selecionar uma opção entre várias. -->
+        <br>
+
+        Horário: <select name="Horarios">
+            <option>09:00</option>
+            <option>09:30</option>
+            <option>10:00</option>
+            <option>10:30</option>
+            <option>11:00</option>
+            <option>11:30</option>
+            <option>13:00</option>
+            <option>13:30</option>
+            <option>14:00</option>
+            <option>14:30</option>
+            <option>15:00</option>
+            <option>15:30</option>
+            <option>16:30</option>
+            <option>17:00</option>
+
+            <!-- <select name=""> Cria um menu suspenso (dropdown) onde o usuário pode escolher uma opção de uma lista.
+                    <option> é usada dentro do elemento <select> em HTML para criar uma lista suspensa de opções. Cada <option> representa uma escolha que o usuário pode selecionar. Essa estrutura permite uma interação compacta e intuitiva em formulários, facilitando a seleção de dados. -->
+        </select>
+        <br>
+
+        Data:
+        <input type="date" name="dataAgenda">
+
+        <!-- type="date" Cria um campo para seleção de data, permitindo ao usuário escolher uma data específica. -->
+        <br>
+
+        Profissional:
+        <input type="checkbox" name="Name1" value="sim"> Name1
+        <input type="checkbox" name="Name2" value="sim"> Name2
+        <input type="checkbox" name="Name3 " value="sim"> Name3
+        <br><br>
+
+        <!-- type="checkbox": Cria uma caixa de seleção (checkbox) que permite ao usuário selecionar uma ou mais opções. -->
+
+        Observações:
+        <br><textarea name="Observações" rows="10" cols="30"></textarea>
+        <br>
+
+        <!-- <textarea>: Cria um campo de texto maior, permitindo que o usuário insira texto com múltiplas linhas. 
+            rows: adiciona quantidade de linhas // cols : adiciona quantidade de colunas -->
+        
+         
+
+        <input type="submit">
+
+        <!-- type="submit">: Cria um botão de envio, que envia os dados do formulário quando clicado. 
+             - rows: adiciona quantidade de linhas 
+             - cols : adiciona quantidade de colunas -->
+
+    </form>
+
+</body>
+
+</html>
